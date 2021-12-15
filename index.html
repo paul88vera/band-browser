@@ -11,14 +11,19 @@
 <body>
     
     <!--Modal-->
-    <div class="modal">
+    <div id="myModal" class="modal fade">
         <div class="modal-content">
-            <div class="modal-title">
-                <h2 class="title">Band Browser</h2>
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h5 class="title">Band Browser</h5>
+                </div>
             </div>
             <div class="modal-body">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Submit</button>
+                <p>The one stop shop to search your favorite bands and ticket information!</p>
+                <form>
+                    <input id="modalTaskDescription" type="text" placeholder="Search...">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
             <div class="tix-link">
                 <!--StubHub is serving as a placeholder-->
@@ -26,6 +31,10 @@
             </div>
         </div>
     </div>
+
+    <header>
+        <h1>Band Browser</h1>
+    </header>
 
 </body>
 
