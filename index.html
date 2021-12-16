@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        
-    </header>
     
-<header>
+<header id="main-header">
+    <div id="mag-container">
+        <div id="mag1"></div>
+        <div id="mag2"></div>
+    </div>
+
     <h1>Band Browser</h1>
 </header>
 
 <!--Placeholder for band name to generate-->
-
-<section>
+<section id="band-reference">
     <div class="band-name">
         <h2>Band Name</h2>
     </div>
 
     <div class="band-image">
-        <h2>Band image here</h2>
+        <!-- <h2>Band image here</h2> -->
+        <img src="./images/pexels-thibault-trillet-167636.jpg" alt="this is a super awesome band photo!" id="image"/>
     </div>
 </section>
 
-<!--Placeholder for ticket info-->
-<div class="event-info">
-    <p>Paragraph for ticket and event info</p>
+<div id="container">
+    <!--Placeholder for ticket info-->
+    <section id="event-info">
+        <p>Paragraph for ticket and event info</p>
+    </section>
 
+    <!--Bios and info about the band-->
+    <section id="band-bio">
+        <div>
+            <p>Info about selected band Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magni, ab totam quisquam nemo in a recusandae quo aperiam dolor et inventore voluptatibus pariatur aliquid? Officiis voluptatum ab vero quas?
+            </p>
+        </div>
+    </section>
 </div>
 
-<!--Bios and info about the band-->
-<section>
-    <div class="band-bio">
-        <p>Info about selected band</p>
-
-    </div>
-</section>
-
 <footer>
+    <div id="arrow-container">
+        <div id="backToTop-boxOuter">
+            <div id="backToTop-boxInner">
+                <a href="#band-reference">^  </a>
+            </div>
+        </div>
+    </div>
+
     <h2>Thanks for stopping by!!</h2>
 </footer>
     
