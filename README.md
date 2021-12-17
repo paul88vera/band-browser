@@ -1,4 +1,4 @@
-# band-browser
+# Band-Browser
 Group Project 01 
 ## Purpose
 
