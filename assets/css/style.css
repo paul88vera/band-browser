@@ -22,6 +22,7 @@ body {
  padding: 10px;
  font-family: 'Righteous', cursive;
  background-image: var(--bgGradient--);
+ cursor: default;
 }
 /** MAGNIFYING GLASS START **/
 #mag-container {
@@ -88,6 +89,7 @@ footer h2 {
  padding: 10px 0 0 0;
  width: 250px;
  color: #cb00ff;
+ cursor: default;
 }
 /** ARROW BUTTON START **/
 #arrow-container {
@@ -144,11 +146,33 @@ footer a {
  }
  #mag-container {
   margin-left: 50px;
+  width: auto;
+ }
+ #mag-container:hover {
+  transform: scale(120%);
+  cursor: pointer;
+ }
+ #mag-container:active {
+  transform: translateY(2px);
  }
  #mag1 {
   bottom:0px;
  }
  #mag2 {
   bottom: 5px;
+ }
+ footer a:hover {
+  animation-name: upBounce;
+  animation-duration: .7s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+ }
+ @keyframes upBounce {
+  from {
+   transform: translateY(1px);
+  }
+  to{
+   transform: translateY(-2px);
+  }
  }
 }
