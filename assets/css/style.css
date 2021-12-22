@@ -270,12 +270,22 @@ img.b {
   -webkit-animation: mymove2 8s linear infinite;
 }
 
+img.c {
+  z-index: -1;
+  -webkit-animation: mymove3 15s linear infinite;
+}
+
 @-webkit-keyframes mymove1 {
   from { left: -700px; }
-  to { left: 1700px; }
+  to { left: 1950px; }
 }
 
 @-webkit-keyframes mymove2 {
-  from { left: 1700px; }
+  from { left: 1950px; }
   to { left: -700px; }
+}
+
+@-webkit-keyframes mymove3 {
+  from { left: -800px; }
+  to { left: 1950px; }
 }
