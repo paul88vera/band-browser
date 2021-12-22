@@ -263,16 +263,18 @@ form p {
 }
 
 img.a {
-  -webkit-animation: mymove1 10s linear infinite;
+  -webkit-animation: mymove1 9s linear infinite;
 }
 
 img.b {
+  top: 200px;
   -webkit-animation: mymove2 8s linear infinite;
 }
 
 img.c {
   z-index: -1;
-  -webkit-animation: mymove3 15s linear infinite;
+  top: 100px;
+  -webkit-animation: mymove3 13s linear infinite;
 }
 
 @-webkit-keyframes mymove1 {
