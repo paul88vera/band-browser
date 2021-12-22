@@ -186,7 +186,7 @@ footer a {
 #index-body {
   justify-content: center;
   text-align: center;
-  background-image: url("/assets/images/pexels-josh-sorenson-154147.jpg");
+  /* background-image: url("/assets/images/pexels-josh-sorenson-154147.jpg"); */
   background-position: center;
   background-blend-mode: overlay;
   background-attachment: fixed;
@@ -197,11 +197,15 @@ footer a {
 }
 form {
   display: block;
+  text-align: center;
   background-color: rgb(243, 243, 243);
   height: auto;
   padding: 20px;
   border-radius: 5px;
   margin-top: 30px;
+}
+#form-bg {
+  background-color: black;
 }
 form h3 {
   font-size: 30px;
