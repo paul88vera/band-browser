@@ -29,7 +29,8 @@ function getArtistInfo() {
     
 };
 
-function displayArtistInfo() {
-};
+// function getEventInfo() {
+//     fetch()
+// }
 
 getArtistInfo();
