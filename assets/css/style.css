@@ -52,6 +52,19 @@ footer {
   bottom: 10px;
 }
 /** MAGNIFYING GLASS END **/
+
+/* Search Bar Start */
+
+.search-bar {
+  position: absolute;
+  width: 15%;
+  display: inline-block;
+  left: 100px;
+  top: 20px;
+  font-size: 20px;
+}
+
+/* Search Bar End */
 /* END HEADER */
 /* BAND REFERENCE SECTION START */
 #band-reference {
@@ -236,4 +249,15 @@ form p {
 }
 .tix-link a:active {
     transform: translateY(2px);
+}
+
+/* Rotating Panorama */
+
+img {
+  position: absolute;
+}
+
+div {
+  position: relative;
+
 }
