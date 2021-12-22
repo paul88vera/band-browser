@@ -29,17 +29,4 @@ function getArtistInfo() {
 
 };
 
-function getEventInfo() {
-    var tixAPI = ""
-    fetch(tixAPI)
-    .then(function(response) {
-        response.json()
-        .then(function(data) {
-            console.log(data)
-        })
-    })
-};
-
 getArtistInfo();
-
-getEventInfo();
