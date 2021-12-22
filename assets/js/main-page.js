@@ -1,8 +1,9 @@
-var bandName = document.querySelector('.band-name');
-var bandImage = document.querySelector('.band-image');
-var eventInfo = document.querySelector('.event-info');
-var bandBio = document.querySelector('.band-bio');
+var bandNameEl = document.querySelector('#name');
+var bandImageEl = document.querySelector('#image');
+var eventInfoEl = document.querySelector('.event-info');
+var bandBioEl = document.querySelector('#band-bio p');
 var bandInfoURL = 'theaudiodb.com/api/v1/json/2/search.php?s=coldplay'
+var artists = []
 
 // var userInput = document.querySelector('.button');
 
@@ -12,11 +13,24 @@ function getArtistInfo() {
         if(response.ok) {
             response.json()
             .then(function(data) {
+                var bandName = data.artists[0].strArtist
+                var bandImage = data.artists[0].strArtistThumb
+                var bandBio = data.artists[0].strBiographyEN
+                console.log(bandImage)
+                bandNameEl.innerHTML = bandName
+                bandImageEl.setAttribute('src', bandImage)
+                bandBioEl.innerHTML = bandBio
+                console.log(bandImageEl)
                 console.log(data)
             })
         }
         else {console.log('error' + response.statusText)}
-    })
+    });
+    
 };
+
+// function getEventInfo() {
+//     fetch()
+// }
 
 getArtistInfo();
