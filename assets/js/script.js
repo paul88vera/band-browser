@@ -37,18 +37,35 @@ function submitBandHandler(event) {
     var artist = userInputEl.value.trim();
 
     getArtistInfo(artist);
+    
 }
 
-function getEventInfo() {
-    var tixAPI = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=GaTAMAKytFLtlNib0wnQuqnwmT0iMzXy'
-    fetch(tixAPI)
-    .then(function(response) {
-        response.json()
-        .then(function(data) {
-            console.log(data)
-        })
-    })
-};
+// $.ajax({
+//     type:"GET",
+//     url:"https://app.ticketmaster.com/discovery/v2/attractions/K8vZ9175BhV.json?apikey=GaTAMAKytFLtlNib0wnQuqnwmT0iMzXy",
+//     async:true,
+//     dataType: "json",
+//     success: function(json) {
+//                 console.log(json);
+//                 // Parse the response.
+//                 // Do other things.
+//              },
+//     error: function(xhr, status, err) {
+//                 // This time, we do not end up here!
+//              }
+//   });
+  
+
+// function getEventInfo() {
+//     var tixAPI = 'https://app.ticketmaster.com/discovery/v2/attractions.json?apikey=GaTAMAKytFLtlNib0wnQuqnwmT0iMzXy'
+//     fetch(tixAPI)
+//     .then(function(response) {
+//         response.json()
+//         .then(function(data) {
+//             console.log(data)
+//         })
+//     })
+// };
 
 function magnifyingGlassSearchHandler() {
     var userInputEl = document.querySelector('#band'); 
@@ -61,4 +78,4 @@ function magnifyingGlassSearchHandler() {
 
 magGlass.addEventListener('click', magnifyingGlassSearchHandler);
 
-getEventInfo();
+// getEventInfo();
