@@ -39,6 +39,7 @@ function submitBandHandler(event) {
     var artist = userInputEl.value.trim();
 
     getArtistInfo(artist);
+    
 }
 
 function getEventInfo(artist) {
