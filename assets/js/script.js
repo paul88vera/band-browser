@@ -23,6 +23,8 @@ function getArtistInfo(artist) {
 
                 var form = document.querySelector('form');
                 form.style.display = 'none';
+
+                getEventInfo(artist);
             })
         }
         else {console.log('error' + response.statusText)}
@@ -39,8 +41,10 @@ function submitBandHandler(event) {
     getArtistInfo(artist);
 }
 
-function getEventInfo() {
-    var tixAPI = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=GaTAMAKytFLtlNib0wnQuqnwmT0iMzXy'
+function getEventInfo(artist) {
+    // var name = document.querySelector('#band').value;
+    var tixAPI = 'https://app.ticketmaster.com/discovery/v2/events.json?keyword=' + artist +  '&apikey=GaTAMAKytFLtlNib0wnQuqnwmT0iMzXy';
+
     fetch(tixAPI)
     .then(function(response) {
         response.json()
@@ -61,4 +65,4 @@ function magnifyingGlassSearchHandler() {
 
 magGlass.addEventListener('click', magnifyingGlassSearchHandler);
 
-getEventInfo();
+// getEventInfo();
