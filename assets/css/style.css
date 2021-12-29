@@ -64,15 +64,50 @@ footer {
 }
 #image {
   width: 60%;
+  margin-top: 10px;
 }
 /* BAND REFERENCE SECTION END */
+/* TICKET SECTION START */
+.newEvent{
+  padding: 10px;
+  margin: 20px auto;
+  height: auto;
+  width: 90%;
+  background-color: rgba(241, 241, 241, 1);
+  border-radius: 5px;
+  text-align: start;
+}
+.newEvent:hover {
+  box-shadow: 1px 1px 8px 8px rgba(54, 54, 54, 0.5);
+  border: 2px solid black;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.newEvent a {
+  color: #8309e7;
+  text-decoration: none;
+}
+/* TICKET SECTION END */
 /* BAND EVENT INFO SECTION START */
 #event-info {
+  margin: 10px;
+  padding: 10px 0;
+  height: auto;
   text-align: center;
   font-weight: bold;
+  background-image: linear-gradient(35deg, #8309e7, #cb00ff);
+  border-radius: 5px;
+}
+.event-info-title {
+  color: white;
+  padding: 20px 0 0 0;
+}
+.band-info-title {
+  text-align: center;
+  padding: 10px 0 20px 0;
 }
 #band-bio {
-  margin: 10px 10px;
+  margin: 10px;
   border-radius: 5px;
   text-align: left;
   background-color: rgba(241, 241, 241, 0.719);
@@ -98,6 +133,9 @@ footer h2 {
 /** ARROW BUTTON START **/
 #arrow-container {
   width: auto;
+}
+#arrow-container:hover {
+  transform: scale(140%) translateX(-9px);
 }
 #backToTop-boxOuter {
   height: 21px;
@@ -139,10 +177,11 @@ footer a {
     width: 30%;
   }
   #event-info {
-    width: 60%;
+    width: 40%;
+    padding: 0 10px;
   }
   #band-bio {
-    width: 30%;
+    width: 60%;
     float: right;
   }
   footer {
@@ -181,7 +220,7 @@ footer a {
   }
 }
 /*=================================
-        INDEX.HMTL CSS START
+        MODAL FORM CSS START
 ===================================*/
 #index-body {
   justify-content: center;
@@ -234,10 +273,14 @@ form p {
 }
 .submitBtn:active {
     transform: translateY(2px);
+}.tix-link a{
+  color: #8309e7;
+  text-decoration: none;
 }
 .tix-link a:hover {
     color: #cb00ff;
+    text-decoration: underline;
 }
-.tix-link a:active {
-    transform: translateY(2px);
+.tix-link a:focus {
+    transform: translateY(12px);
 }
