@@ -70,13 +70,13 @@ magGlass.addEventListener('click', magnifyingGlassSearchHandler);
 
 var eventInfoDisplay = function(data) {
   var bands = [0,1,2,3,4];
+
   for (var i = 0; i < bands.length; i++) {
   var eventName = data._embedded.events[i].name;
   var eventCity = data._embedded.events[i]._embedded.venues[0].city.name;
   var eventAddress = data._embedded.events[i]._embedded.venues[0].address.line1;
   var eventDate = data._embedded.events[i].dates.start.localDate;
   var eventLink = data._embedded.events[i].url;
-
   var bandEventContainer = document.querySelector('#event-info');
   var bandEventContainerEl = document.createElement('div');
 
@@ -87,4 +87,7 @@ var eventInfoDisplay = function(data) {
   "<a href=" + eventLink + "><h3>"+ eventName + "</h3><br/><h4>" + eventAddress + ", " + eventCity +
   "</h4><br/><h4>" + eventDate + "</h4></a>";
   }
+
+  bandEventContainerEl.innerHTML = "<a href='https://www.ticketmaster.com/'>View More Concerts...</a>";
+
 };
