@@ -48,7 +48,6 @@ function getEventInfo(artist) {
     .then(function(response) {
         response.json()
         .then(function(data) {
-          console.log(data);
           // add eventInfoDisplay function here
           eventInfoDisplay(data);
         })
