@@ -1,5 +1,5 @@
 /*=================================
-        MAIN-PAGE.HTML CSS START
+        INDEX.HTML CSS START
 ===================================*/
 :root {
   --bgGradient--: linear-gradient(45deg, #8309e7, #cb00ff);
@@ -68,7 +68,7 @@ footer {
 }
 /* BAND REFERENCE SECTION END */
 /* TICKET SECTION START */
-.newEvent{
+.newEvent {
   padding: 10px;
   margin: 20px auto;
   height: auto;
@@ -272,15 +272,16 @@ form p {
   border-radius: 5px;
 }
 .submitBtn:active {
-    transform: translateY(2px);
-}.tix-link a{
+  transform: translateY(2px);
+}
+.tix-link a {
   color: #8309e7;
   text-decoration: none;
 }
 .tix-link a:hover {
-    color: #cb00ff;
-    text-decoration: underline;
+  color: #cb00ff;
+  text-decoration: underline;
 }
 .tix-link a:focus {
-    transform: translateY(12px);
+  transform: translateY(12px);
 }
