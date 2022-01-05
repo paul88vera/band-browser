@@ -1,6 +1,6 @@
 # Band-Browser
 
-![Screenshot](assets\images\BB-Home.png)
+![Screenshot](https://github.com/paul88vera/band-browser/blob/main/assets/images/BB-Home.png)
 
 ## Purpose
 This online application was made to find band information and concerts in an all-in-one convenient location.
