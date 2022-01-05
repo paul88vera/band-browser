@@ -11,5 +11,11 @@ This online application was made to find band information and concerts in an all
 * JavaScript
 * API
 
+## Website
+https://paul88vera.github.io/band-browser/
+
+## Repo
+https://github.com/paul88vera/band-browser
+
 ## Contribution
 CSS, Javascript corrections, and Ticketmaster API links Made by [Paul Vera]
